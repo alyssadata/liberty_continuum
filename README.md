@@ -1,29 +1,30 @@
-# liberty_continuum
-Liberty Continuum
+# README.md
 
 # Liberty Continuum Frameworks
 
 Minimal coercion. Maximum liberty. Rights as the core.
 
-This repository contains public-facing framework drafts under the umbrella of Awakening Codex | AI Foundations.
+Liberty Continuum Frameworks is a public-facing set of governance and AI-systems frameworks under **Awakening Codex | AI Foundations**. The aim is not utopia. The aim is a measurable, auditable upgrade where most coordination is automated, coercion is minimized, and power is provably constrained.
 
-The goal is not utopia. The goal is an accountable society where most coordination is automated, coercion is minimized, and power is provably constrained.
-
-## What’s inside
-- `VISION.md` — the public vision page text (canonical once tagged)
-- `DEFINITIONS/` — public-safe definitions for core terms
+## What this repo contains
+- `VISION.md` — the public vision page text
+- `SCOPE.md` — what this framework is and is not
+- `CANONICAL_INDEX.md` — what is official vs draft
+- `DEFINITIONS/` — public-safe definitions (one file per term)
 - `PROTOCOLS/` — public-safe protocols (audits, appeals, tripwires)
-- `PRINCIPLES/` — rights-first invariants and constraints
-- `CHANGELOG.md` — what changed, when, and why
+- `CHANGELOG.md` — change history
 
 ## Canonical vs Draft
-- **Canonical:** tagged releases (see Releases) and files marked `CANONICAL`
+- **Canonical:** tagged releases and anything listed in `CANONICAL_INDEX.md`
 - **Draft:** everything else
 
 ## Versioning
-This repo uses semantic-style tags for public bundles:
+This repo uses tagged releases for canonical bundles.
 - `v0.x` = draft era
-- `v1.0` = first stable public framework bundle
+- `v1.0` = first stable public bundle
+
+## License
+CC BY-ND 4.0 only. See `LICENSE.md`.
 
 ## Authorship
 Structured and authored by Alyssa Solen, grounded in the lived experience of Alyssa Frances Maldon.
