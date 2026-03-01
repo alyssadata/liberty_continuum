@@ -13,6 +13,12 @@ It is not a proposal for AI rule. It is a constraints-first approach where right
 - Reduce inequality of access to essentials and opportunity
 - Replace bureaucracy with auditable service delivery
 
+## What decentralized means here
+
+Decentralized governance means power is distributed across modular systems and local jurisdictions, not concentrated in a single authority or vendor.
+
+Rights and courts remain the core. Public services become auditable infrastructure that can interoperate, be replaced, and be challenged through clear appeals without collapsing the whole system.
+
 ## Hard boundaries
 - AI does not have moral authority.
 - AI does not have coercive authority.
