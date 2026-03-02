@@ -1,3 +1,5 @@
+Start here: [INDEX.md](INDEX.md)
+
 # README.md
 
 # Liberty Continuum Frameworks
