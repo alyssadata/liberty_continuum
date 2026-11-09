@@ -1,0 +1,34 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/alyssadata/liberty_continuum/blob/main/DRAFTS/spec/decision-record.vnext.schema.json",
+  "title": "Liberty Continuum vNext decision record (draft)",
+  "description": "Proposed privacy-minimized evidence envelope for one consequential decision. This is not an approved legal compliance schema.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["decision_id", "recorded_at", "service_id", "system_version", "rule_version", "consequence_class", "jurisdiction", "authority_id", "source_refs", "outcome", "reason_codes", "appeal_route", "rights_check", "audit_state"],
+  "properties": {
+    "decision_id": {"type": "string", "minLength": 1},
+    "recorded_at": {"type": "string", "format": "date-time"},
+    "service_id": {"type": "string", "minLength": 1},
+    "system_version": {"type": "string", "minLength": 1},
+    "rule_version": {"type": "string", "minLength": 1},
+    "consequence_class": {"enum": ["C0", "C1", "C2", "C3", "C4"]},
+    "jurisdiction": {"type": "string", "minLength": 1},
+    "authority_id": {"type": "string", "minLength": 1},
+    "source_refs": {"type": "array", "minItems": 1, "uniqueItems": true, "items": {"type": "string", "minLength": 1}},
+    "outcome": {"type": "string", "minLength": 1},
+    "reason_codes": {"type": "array", "minItems": 1, "items": {"type": "string", "minLength": 1}},
+    "uncertainty_note": {"type": ["string", "null"]},
+    "appeal_route": {"type": "string", "minLength": 1},
+    "rights_check": {"enum": ["passed", "failed", "pending"]},
+    "audit_state": {"enum": ["active", "degraded", "frozen", "review", "restored"]},
+    "notification_ref": {"type": "string", "minLength": 1},
+    "human_approval_ref": {"type": "string", "minLength": 1},
+    "retention_policy_ref": {"type": "string", "minLength": 1},
+    "correction_of": {"type": "string", "minLength": 1}
+  },
+  "allOf": [
+    {"if": {"properties": {"consequence_class": {"const": "C3"}}, "required": ["consequence_class"]}, "then": {"required": ["notification_ref", "human_approval_ref"]}},
+    {"if": {"properties": {"consequence_class": {"const": "C4"}}, "required": ["consequence_class"]}, "then": {"required": ["notification_ref", "human_approval_ref"]}}
+  ]
+}
