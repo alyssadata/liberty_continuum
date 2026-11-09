@@ -14,6 +14,17 @@ Read the vision first, then the scope, then the canonical rules.
 
 [CANONICAL_INDEX.md](CANONICAL_INDEX.md)
 
+## vNext architecture and testing (working drafts — 2026-11-09)
+
+This is the newer, structured research proposal. It is **not** a canonical release.
+
+1. [Layered rights / authority / service / assurance / recovery architecture](DRAFTS/2026-11-09_Liberty_Continuum_Architecture_vNext.md)
+2. [Competency questions, positive and negative controls, evidence plan](DRAFTS/2026-11-09_Liberty_Competency_and_Falsification_Tests.md)
+3. [Decision record schema](DRAFTS/spec/decision-record.vnext.schema.json)
+4. [Pilot control thresholds schema](DRAFTS/spec/pilot-controls.vnext.schema.json)
+5. [Illustrative decision gate](DRAFTS/reference/guardrails.py) · [Synthetic tests](DRAFTS/reference/test_guardrails.py)
+6. [Website vNext information architecture](DRAFTS/2026-11-09_Liberty_Website_Architecture_Spec.md)
+
 ## Definitions
 
 Definitions are public-safe, single-term anchors used across the protocols and vision.
@@ -52,7 +63,7 @@ Change history, licensing, and the top-level readme.
 
 [CHANGELOG.md](CHANGELOG.md)
 
-[LICENSE](LICENSE)
+[LICENSE.md](LICENSE.md)
 
 ---
 

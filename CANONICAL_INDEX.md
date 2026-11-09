@@ -15,3 +15,7 @@ Only **tagged releases** are canonical bundles.
 
 ## Rule
 If it is not in a tagged release, it is draft.
+
+## Development status (2026-11-09)
+
+The vNext layered architecture, proposed schemas, reference tests, competency questions, and website design specification under `DRAFTS/` are **not canonical**. Their appearance on the main branch does not change any historical tagged release. Promotion requires explicit version review, release notes, tests and recorded author approval.

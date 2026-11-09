@@ -1,0 +1,24 @@
+name: Liberty vNext draft reference tests
+on:
+  push:
+    paths:
+      - 'DRAFTS/reference/**'
+      - 'DRAFTS/spec/**'
+      - '.github/workflows/liberty-vnext-reference-tests.yml'
+  pull_request:
+    paths:
+      - 'DRAFTS/reference/**'
+      - 'DRAFTS/spec/**'
+      - '.github/workflows/liberty-vnext-reference-tests.yml'
+jobs:
+  reference-unit-tests:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Run synthetic controls and schema smoke tests
+        run: python -m unittest discover -s DRAFTS/reference -p 'test_*.py' -v
